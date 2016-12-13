@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="食材在线,食品岛,食品,食材,餐饮采购,食材配送,餐饮配送,餐饮O2O,shicaionline,shicaizaixian">
+    <meta name="description" content="食材在线,食品岛,食品,食材,餐饮采购,蜂蝶鸟,食材供应,食材采购,餐厅配送">
+    <title>食材在线</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <link href="resource/website/css.css" rel="stylesheet" type="text/css" />
+</head>
+<SCRIPT language="javascript">
+//加入收藏
+
+function AddFavorite(sURL, sTitle) {
+
+    sURL = encodeURI(sURL);
+
+    try {
+
+        window.external.addFavorite(sURL, sTitle);
+
+    } catch (e) {
+
+        try {
+
+            window.sidebar.addPanel(sTitle, sURL, "");
+
+        } catch (e) {
+
+            alert("加入收藏失败,请使用Ctrl+D进行添加,或手动在浏览器里进行设置.");
+
+        }
+
+    }
+
+}
+
+//设为首页
+
+function SetHome(url) {
+
+    if (document.all) {
+
+        document.body.style.behavior = 'url(#default#homepage)';
+
+        document.body.setHomePage(url);
+
+    } else {
+
+        alert("您好,您的浏览器不支持自动设置页面为首页功能,请您手动在浏览器里设置该页面为首页!");
+
+    }
+
+}
+</SCRIPT>
+
+<body>
+    <div class="box">
+        <!--头部-->
+        <div class="top">
+            <div class="top_on"><a onClick="SetHome('http://www.shicaionline.com')" href="javascript:void(0)" title="设为首页">设为首页</a> | <a onClick="AddFavorite('http://www.shicaionline.com','食材在线')" href="javascript:void(0)" title="加入收藏">加入收藏</a></div>
+        </div>
+        <!--导航-->
+        <div class="nav" id="nav">
+            <div class="logo">
+                <a href="index.html"><img src="resource/website/images/logo.jpg" border="0" /></a>
+            </div>
+            <!--菜单-->
+            <div class="menu">
+                <ul>
+                    <li>
+                        <router-link class="cd" to="/">首页</router-link>
+                    </li>
+                    <li>
+                        <router-link class="cd" to="/user/about">公司简介</router-link>
+                    </li>
+                    <li>
+                        <router-link class="cd" to="/user/zhaopin">人才招聘</router-link>
+                    </li>
+                    <li>
+                        <router-link class="cd" to="/user/concact">联系我们</router-link>
+                    </li>
+                </ul>
+            </div>
+            <!--菜单结束-->
+        </div>
+        <!--头部结束-->
+        <router-view></router-view>
+        <!--end-->
+        <!--底部-->
+        <div class="down">
+            <div style="margin:10px auto 0px auto; height:80px; width:1052px; line-height:25px; font-size:14px; padding-top:40px;">
+                <div style="float:left;">
+                    <p><span style="font-size:24px; font-weight:bold;">深圳市前海食材在线供应链控股有限公司</span></p>
+                    <p>总部：深圳市福田区益田路3008号皇都广场C座3612室
+                        <br /> 电话：0755-8361 2099&nbsp;&nbsp;&nbsp;&nbsp;0755-8923 6622&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br /> 电子邮件：shicaionline@163.com
+                        <br /> 备案号：粤ICP16000234号 &nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </div>
+                <div style="float:left;margin-top:41px;" ;>
+                    <p><span style="font-size:24px; font-weight:bold;"></span></p>
+                    <p>广州分公司：广州市天河区黄埔大道西33号三新大厦2楼
+                        <br /> 电话：020-3677 5865&nbsp;&nbsp;&nbsp;&nbsp;020-3677 5101
+                        <br/>
+                        <a href="recruitment.html" style="color:#F8B216">《致应聘者的防诈骗申明》</a>
+                    </p>
+                </div>
+                <div style="text-align:center; font-size:14px; width:118px; float:left; margin-left:100px;"><img src="resource/website/images/ewm.jpg" />关注微信</div>
+            </div>
+        </div>
+        <!--底部-->
+    </div>
+</body>
+
+</html>

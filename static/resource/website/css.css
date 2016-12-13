@@ -1,0 +1,440 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font: 14px;
+    font-family: "微软雅黑"
+}
+
+
+/**首页样式**/
+
+.menu ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.menu ul li {
+    float: left;
+    width: 94px;
+    color: #333333;
+    line-height: 95px;
+    height: 95px;
+    text-align: center;
+}
+
+.box {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top {
+    background-color: #efefef;
+    height: 38px;
+    line-height: 38px;
+}
+
+.top_on {
+    width: 1052px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.top_on a {
+    color: #333;
+    text-decoration: none;
+}
+
+.nav {
+    width: 1052px;
+    margin: 0 auto;
+    height: 96px;
+}
+
+.logo {
+    float: left;
+    height: 96px;
+}
+
+.menu {
+    float: left;
+    margin-left: 435px;
+}
+
+.cd:link,
+cd:visited {
+    float: left;
+    width: 94px;
+    color: #333333;
+    line-height: 95px;
+    height: 95px;
+    text-decoration: none;
+}
+
+.cd:hover,
+cd:active {
+    float: left;
+    width: 94px;
+    color: #333333;
+    line-height: 95px;
+    height: 95px;
+    background: url(images/nav_bg.jpg);
+    text-decoration: none;
+}
+
+.menu ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url(images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 555px;
+}
+
+.ts_4 {
+    width: 1052px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 288px;
+}
+
+.t1 {
+    font-size: 18px;
+    color: #666666;
+    text-decoration: none;
+    background-image: url(images/1.jpg);
+    background-repeat: no-repeat;
+}
+
+.t2 {
+    font-size: 18px;
+    color: #666666;
+    text-decoration: none;
+    background-image: url(images/2.jpg);
+    background-repeat: no-repeat;
+}
+
+.t3 {
+    font-size: 18px;
+    color: #666666;
+    text-decoration: none;
+    background-image: url(images/3.jpg);
+    background-repeat: no-repeat;
+}
+
+.t4 {
+    font-size: 18px;
+    color: #666666;
+    text-decoration: none;
+    background-image: url(images/4.jpg);
+    background-repeat: no-repeat;
+}
+
+.ts_4 ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ts_4 ul li {
+    height: 288px;
+    width: 220px;
+    text-align: center;
+    float: left;
+    margin-left: 21px;
+    margin-right: 21px;
+}
+
+.wz {
+    font-size: 14px;
+    color: #999;
+    text-align: left;
+    line-height: 35px;
+    margin-top: 35px;
+    padding-left: 20px;
+}
+
+.xiadan {
+    height: 400px;
+    width: 100%;
+    background: #e7e8ea;
+    margin-top: 72px;
+}
+
+.gongzuo {
+    height: 330px;
+    width: 100%;
+}
+
+.cp {
+    height: 550px;
+    width: 100%;
+    background: #e7e8ea;
+}
+
+.shili {
+    height: 420px;
+    width: 100%;
+}
+
+.tp {
+    margin: 10px auto 0px auto;
+    height: 155px;
+    width: 1052px;
+    margin-bottom: 20px;
+}
+
+.tp ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.tp ul li {
+    float: left;
+    width: 248px;
+    height: 152px;
+    text-align: center;
+    font-size: 14px;
+    color: #272727;
+}
+
+.down {
+    height: 210px;
+    width: 100%;
+    background-color: #272b34;
+    color: #fff;
+}
+
+.down a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+/**首页结束**/
+
+.banner2 {
+    background-image: url(images/banner2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 320px;
+}
+
+.about {
+    height: 520px;
+    width: 100%;
+}
+
+.company {
+    height: 720px;
+    width: 100%;
+}
+
+.Contact {
+    height: 620px;
+    width: 100%;
+}
+
+.banner3 {
+    background-image: url(images/banner3.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 320px;
+}
+
+.banner4 {
+    background-image: url(images/banner4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 320px;
+}
+
+.banner5 {
+    background-image: url(images/banner5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 320px;
+}
+
+
+/**招聘**/
+
+.clr {
+    clear: both;
+}
+
+.job {
+    border: 1px solid #E8E8E8;
+    background: #F9F9F9 url(images/jobbox_bg.gif) repeat-y 299px 0px;
+}
+
+.job .fl {
+    float: left;
+    width: 300px;
+}
+
+.job .fl h3 {
+    text-indent: 30px;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #E8E8E8;
+    margin: 0px;
+}
+
+.job .fl ul {
+    margin: 0px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding: 0px;
+}
+
+.job .fl ul li {
+    list-style: none;
+}
+
+.job .fl ul li a {
+    height: 40px;
+    line-height: 40px;
+    display: block;
+    margin-left: 16px;
+    padding-left: 20px;
+    background: url(images/job_col_libg.gif) no-repeat 1px 38px;
+    color: #666;
+    outline: none;
+    text-decoration: none;
+}
+
+.job .fl ul li a.current {
+    background: #FFF;
+    color: #FF8A00;
+    border: 1px solid #E8E8E8;
+    border-right: 0px;
+    margin-top: -2px;
+}
+
+.job .fr {
+    float: left;
+    width: 750px;
+}
+
+.job .fr h3 {
+    padding: 0 20px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: normal;
+    color: #999;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #E8E8E8;
+    margin: 0px;
+}
+
+.job .fr h3 span {
+    float: left;
+    text-indent: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+.job .fr .main_centent {
+    background: #FFF;
+    padding: 30px 40px;
+}
+
+.job .fr .main_centent .job_tlist {}
+
+.job .fr .main_centent .job_tlist ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+.job .fr .main_centent .job_tlist ul li {
+    width: 330px;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+
+.job .fr .main_centent .tm {
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px solid #E8E8E8;
+    margin: 20px 0;
+}
+
+.job .fr .main_centent .tm strong {
+    float: left;
+    display: block;
+    background: #F1F1F1;
+    padding: 0 18px;
+    margin-left: 10px;
+}
+
+.job .fr .main_centent .mainContent {
+    line-height: 200%;
+    color: #666;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.job .fr .main_centent .job_apply {
+    width: 100%;
+    height: 50px;
+    margin: 20px 0px;
+}
+
+.job .fr .main_centent .job_apply a {
+    width: 120px;
+    height: 38px;
+    line-height: 38px;
+    background: #F8B216;
+    margin: 0 18px 0 5px;
+    color: #FFF;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+#mask {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.5;
+    z-index: 2;
+    display: none;
+}
+
+#alert_wrap{
+	position: fixed;
+	width:700px;
+	height:700px;
+	left:50%;
+	top:50%;
+	margin-left:-350px;
+	margin-top:-350px;
+	display: none;
+	z-index: 3;
+}
+#alert_close{
+	width:24px;
+	height:24px;
+	display: block;
+	position: absolute;
+	right:-12px;
+	top:-12px;
+	background: url(images/close.png) no-repeat 0 0/24px 24px;
+}
+#statement_alert{
+	width:100%;
+	height:100%;
+	background: #fff;
+}
