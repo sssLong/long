@@ -50,7 +50,11 @@ body {
     margin: 0 auto;
     height: 96px;
 }
-
+.nav:after{
+    display: block;
+    content: "";
+    clear: both;
+}
 .logo {
     float: left;
     height: 96px;
@@ -410,7 +414,7 @@ cd:active {
     background: black;
     opacity: 0.5;
     z-index: 2;
-    display: none;
+    
 }
 
 #alert_wrap{
@@ -421,7 +425,6 @@ cd:active {
 	top:50%;
 	margin-left:-350px;
 	margin-top:-350px;
-	display: none;
 	z-index: 3;
 }
 #alert_close{
