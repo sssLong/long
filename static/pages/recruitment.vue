@@ -13,7 +13,7 @@
                     <div class="fl">
                         <h3>职位列表</h3>
                         <ul id="ul_nav">
-                            <li v-for='(job,index) in jobs' @click='addActive(index)'><router-link :to='job[1]' :class='{current:isActive[index]}'>{{job[0]}}</router-link></li>
+                            <li v-for='(job,index) in jobs' @click='addActive(index)'><router-link :to='job[1]' :class='{current:index == isActive}'>{{job[0]}}</router-link></li>
                         </ul>
                     </div>
                     <div class="fr" id="div_con">
@@ -49,7 +49,7 @@ module.exports = {
                 ['仓库管理员', '/user/zhaopin/git'],
                 ['采购专员', '/user/zhaopin/buy']
             ],
-            isActive:[true,false,false,false,false]
+            isActive:0
         }
     },
     methods: {
@@ -60,23 +60,13 @@ module.exports = {
         closeZhao: function() {
             this.$emit('zhaopin');
         },
-        addActive:function(n){
-            
-            this.isActive = [false,false,false,false,false];
-            this.isActive[n] = true;
-            /*for(var i = 0; i < this.isActive.length; i ++){
-                if(i == n ){
-                    this.isActive[i] = true;
-                }else{
-                    this.isActive[i] = false;
-                }
-               
-            }*/
-            
+        addActive:function(n){        
+            this.isActive = n;        
         }
     },
     created: function() {
 
     }
 }
+
 </script>

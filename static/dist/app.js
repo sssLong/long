@@ -23,20 +23,26 @@ webpackJsonp([0],[
 	            component: __webpack_require__(10)
 	        }, {
 	            path: '/user/zhaopin/leader',
-	            component: __webpack_require__(12)
+	            component: __webpack_require__(13)
 	        }, {
 	            path: '/user/zhaopin/market',
-	            component: __webpack_require__(14)
+	            component: __webpack_require__(15)
 	        }, {
 	            path: '/user/zhaopin/git',
-	            component: __webpack_require__(16)
+	            component: __webpack_require__(17)
 	        }, {
 	            path: '/user/zhaopin/buy',
-	            component: __webpack_require__(18)
+	            component: __webpack_require__(19)
 	        }]
 	    }, {
 	        path: '/user/contact',
-	        component: __webpack_require__(20)
+	        component: __webpack_require__(21)
+	    }, {
+	        // 404 跳转到首页
+	        path: '/*',
+	        redirect: function redirect() {
+	            return '/';
+	        }
 	    }]
 	});
 
@@ -472,7 +478,7 @@ webpackJsonp([0],[
 	    data: function () {
 	        return {
 	            jobs: [['PHP工程师', '/user/zhaopin/php'], ['总经理助理', '/user/zhaopin/leader'], ['拓展专员/市场推广/销售代表/业务员', '/user/zhaopin/market'], ['仓库管理员', '/user/zhaopin/git'], ['采购专员', '/user/zhaopin/buy']],
-	            isActive: [true, false, false, false, false]
+	            isActive: 0
 	        };
 	    },
 	    methods: {
@@ -484,17 +490,7 @@ webpackJsonp([0],[
 	            this.$emit('zhaopin');
 	        },
 	        addActive: function (n) {
-
-	            this.isActive = [false, false, false, false, false];
-	            this.isActive[n] = true;
-	            /*for(var i = 0; i < this.isActive.length; i ++){
-	                if(i == n ){
-	                    this.isActive[i] = true;
-	                }else{
-	                    this.isActive[i] = false;
-	                }
-	               
-	            }*/
+	            this.isActive = n;
 	        }
 	    },
 	    created: function () {}
@@ -560,7 +556,7 @@ webpackJsonp([0],[
 	      }
 	    }, [_h('router-link', {
 	      class: {
-	        current: _vm.isActive[index]
+	        current: index == _vm.isActive
 	      },
 	      attrs: {
 	        "to": job[1]
@@ -650,8 +646,11 @@ webpackJsonp([0],[
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
+	/* script */
+	__vue_exports__ = __webpack_require__(11)
+
 	/* template */
-	var __vue_template__ = __webpack_require__(11)
+	var __vue_template__ = __webpack_require__(12)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -686,6 +685,86 @@ webpackJsonp([0],[
 
 /***/ },
 /* 11 */
+/***/ function(module, exports) {
+
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+	//
+
+	module.exports = {
+	    created: function () {}
+	};
+
+/***/ },
+/* 12 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;
@@ -829,14 +908,14 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 12 */
+/* 13 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* template */
-	var __vue_template__ = __webpack_require__(13)
+	var __vue_template__ = __webpack_require__(14)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -870,7 +949,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 13 */
+/* 14 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;
@@ -924,14 +1003,14 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 14 */
+/* 15 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* template */
-	var __vue_template__ = __webpack_require__(15)
+	var __vue_template__ = __webpack_require__(16)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -965,7 +1044,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 15 */
+/* 16 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;
@@ -1024,14 +1103,14 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 16 */
+/* 17 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* template */
-	var __vue_template__ = __webpack_require__(17)
+	var __vue_template__ = __webpack_require__(18)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1065,7 +1144,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 17 */
+/* 18 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;
@@ -1119,14 +1198,14 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 18 */
+/* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* template */
-	var __vue_template__ = __webpack_require__(19)
+	var __vue_template__ = __webpack_require__(20)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1160,7 +1239,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 19 */
+/* 20 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;
@@ -1214,14 +1293,14 @@ webpackJsonp([0],[
 	}
 
 /***/ },
-/* 20 */
+/* 21 */
 /***/ function(module, exports, __webpack_require__) {
 
 	var __vue_exports__, __vue_options__
 	var __vue_styles__ = {}
 
 	/* template */
-	var __vue_template__ = __webpack_require__(21)
+	var __vue_template__ = __webpack_require__(22)
 	__vue_options__ = __vue_exports__ = __vue_exports__ || {}
 	if (
 	  typeof __vue_exports__.default === "object" ||
@@ -1255,7 +1334,7 @@ webpackJsonp([0],[
 
 
 /***/ },
-/* 21 */
+/* 22 */
 /***/ function(module, exports, __webpack_require__) {
 
 	module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;

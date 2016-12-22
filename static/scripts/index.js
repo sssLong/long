@@ -15,13 +15,12 @@ const router = new VueRouter({
         children: [{
             path: '/user/zhaopin/php',
             component: require('../pages/recu/php.vue')
-        },
-        {
+        }, {
             path: '/user/zhaopin/leader',
             component: require('../pages/recu/leader.vue')
         }, {
             path: '/user/zhaopin/market',
-            component: require('../pages/recu/market.vue')
+            component: require('../pages/recu/market.vue')  
         }, {
             path: '/user/zhaopin/git',
             component: require('../pages/recu/git.vue')
@@ -32,6 +31,12 @@ const router = new VueRouter({
     }, {
         path: '/user/contact',
         component: require('../pages/contact.vue')
+    }, {
+        // 404 跳转到首页
+        path: '/*',
+        redirect() {
+            return '/'
+        }
     }]
 })
 

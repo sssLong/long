@@ -69,3 +69,11 @@
         </div>
     </div>
 </template>
+<script type="text/javascript">
+module.exports = {
+    created:function(){
+
+    }
+}
+
+</script>
