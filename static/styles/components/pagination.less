@@ -1,0 +1,56 @@
+@import (reference) "../variables.less";
+
+@margin-vertical : @line-height-computed;
+
+.pagination-widget{
+	display: inline-block;
+	line-height: @line-height-base;
+
+	.pagination-total,
+	.pagination-selector,
+	.pagination-jumper{
+		display: inline-block;
+		margin: @margin-vertical 6px;
+
+		input[type="text"]{
+			height: @input-height-small;
+		}
+	}
+
+	.pagination-total,
+	.pagination-jumper{
+		>span,
+		>a,
+		>em{
+			float: left;
+			line-height: @line-height-base;
+			font-size: @font-size-base;
+			padding: @padding-base-vertical 0;
+		}
+
+		input{			
+			width: 40px;
+			margin: 0 3px;
+			border-radius: @input-border-radius;
+			line-height: @line-height-base;
+			font-size: @font-size-base;
+		}
+	}
+
+	.pagination-jumper{	
+		>span,
+		>a,
+		>em{
+			padding-top: 2px;
+			padding-bottom: 2px;
+		}
+	}
+
+	.dropdown{
+		float: left;
+	}
+
+	.pagination{
+		margin: @margin-vertical 6px;
+	}
+}
